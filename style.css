@@ -1,0 +1,216 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #6F4F37;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://i.pinimg.com/474x/4d/22/09/4d2209142a70f2ebaf08ef1bfdddd27d.jpg');
+    background-size: center;
+    background-position: center;
+    padding: 120px 0;
+    text-align: center;
+    color: #6F4F37;
+    display: flex; /* Menambahkan flexbox untuk memudahkan penataan */
+    justify-content: center; /* Menyelaraskan konten secara horizontal */
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+    height: 100vh; /* Menjamin bahwa hero section memenuhi seluruh tinggi layar */
+}
+
+/* Penjelasan Toko */
+.hero .description {
+    font-size: 1.2em;
+    color: #6F4F37;
+    margin-top: 180px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    text-align: center; /* Membuat penjelasan sejajar di tengah */
+}
+
+
+.hero h2 {
+    font-size: 4em; /* Membuat teks lebih besar */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #45a049;
+}
+
+
+/* Product Section */
+.products {
+    background-color: white;
+    padding: 50px 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.product-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.product-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.product-item button:hover {
+    background-color: #45a049;
+}
+
+/* Cart Section */
+.cart {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.cart ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.cart li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.cart button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.cart button:hover {
+    background-color: #e53935;
+}
+
+#total-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Footer */
+footer {
+    background-color: #6F4F37;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}

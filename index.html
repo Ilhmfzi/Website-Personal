@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toko Makanan Online</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- JSON-LD Schema for the Store -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Store",
+            "name": "Toko The Pamer",
+            "description": "Toko online yang menyediakan berbagai jenis Pancong Lumer dengan rasa unik seperti coklat, keju, tiramisu, dan lainnya. Produk berkualitas dengan harga terjangkau.",
+            "url": "https://www.tokomakananrumahan.com",
+            "logo": "https://www.tokomakananrumahan.com/logo.png",
+            "image": "https://www.tokomakananrumahan.com/store-image.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jalan Rhm Noeradji Gange Mede 6 No. 5",
+                "addressLocality": "Kota Tangerang",
+                "addressRegion": "Banten",
+                "postalCode": "15113",
+                "addressCountry": "ID"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+6285719364231",
+                "contactType": "Customer Service",
+                "areaServed": "ID",
+                "availableLanguage": "Bahasa Indonesia"
+            },
+            "sameAs": [
+                "https://www.facebook.com/tokomakananrumahan",
+                "https://www.instagram.com/tokomakananrumahan"
+            ]
+        }
+        </script>
+    
+        <!-- JSON-LD Schema for Products -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "Pancong Lumer Coklat & Keju",
+            "image": "https://smkm4.sch.id/wp-content/uploads/2014/08/PANCONG-LUMER.jpg",
+            "description": "Pancong Lumer dengan rasa coklat dan keju yang lezat, cocok untuk menemani waktu santai Anda.",
+            "sku": "12345",
+            "offers": {
+                "@type": "Offer",
+                "url": "https://www.tokomakananrumahan.com/product/pancong-lumer-coklat-keju",
+                "priceCurrency": "IDR",
+                "price": "12000",
+                "priceValidUntil": "2025-12-31",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock",
+                "seller": {
+                    "@type": "Organization",
+                    "name": "Toko The Pamer"
+                }
+            }
+        }
+        </script>
+    </head>
+    
+<body>
+    <header>
+        <div class="container">
+            <h1>Toko The Pamer </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                    <li><a href="#contact">Kontak Kami</a></li>
+                    <li><a href="#cart">Keranjang</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Selamat datang di Toko The Pamerrr!</h2>
+            <p>Temukan makanan & minuman lezat untuk  memuaskan selera Anda</p>
+            <p class="description">Di toko ini, kami menyajikan berbagai jenis Pancong Lumer dengan rasa yang unik dan lezat. Setiap potongannya penuh dengan rasa coklat, keju, tiramisu, dan varian rasa lainnya. Semua bahan yang digunakan adalah bahan berkualitas tinggi dan dibuat dengan penuh cinta. Nikmati setiap gigitan dengan harga yang terjangkau!</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Kami</h2>
+            <p>Toko Makanan Rumahan adalah tempat yang menyajikan berbagai hidangan lezat khas rumahan, dengan fokus pada inovasi rasa dalam setiap produk kami. Salah satu menu andalan kami adalah Pancong Lumer, yang hadir dalam berbagai varian rasa seperti coklat, keju, tiramisu, dan banyak lagi. Kami berkomitmen untuk selalu menggunakan bahan berkualitas tinggi dan menjaga kebersihan serta kenyamanan dalam setiap proses pembuatan makanan.</p>
+            <p>Setiap hidangan dibuat dengan penuh cinta dan perhatian, memastikan setiap pelanggan puas dengan rasa dan kualitas yang kami tawarkan. Kami berharap dapat terus memberikan yang terbaik bagi Anda, dengan harga yang terjangkau dan pelayanan yang ramah.</p>
+        </div>
+    </section>
+    
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Produk Terbaru</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="https://smkm4.sch.id/wp-content/uploads/2014/08/PANCONG-LUMER.jpg" alt="Pancong Lumer Coklat & Keju">
+                    <h3>Pancong Lumer Coklat & Keju</h3>
+                    <p>Harga: Rp 12.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pancong Lumer Coklat & Keju', 12000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/409f9ed7-2a0c-4193-a151-339da0b96103_master-menu-item-image_1597222264660.jpg" alt="Pancong Lumer Tiramisu Crunchy">
+                    <h3>Pancong Lumer Tiramisu Crunchy</h3>
+                    <p>Harga: Rp 15.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pancong Lumer Tiramisu Crunchy', 15000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjG6eRMiC62jhnIULr9PELKYWPIjZD1MO-g&s" alt="Pancong Lumer Taro">
+                    <h3>Pancong Lumer Taro</h3>
+                    <p>Harga: Rp 12.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pancong Lumer Taro', 12000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxOQF267i4elqpyIFKIEESWk7p6kUbTF0CXw&s" alt="Pancong Lumer Strawbery Chococip">
+                    <h3>Pancong Lumer Strawbery Chococip</h3>
+                    <p>Harga: Rp 13.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pancong Lumer Strawbery Chococip', 13000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/0cecc2dd-a379-4a19-8f49-bee25e13cba5_master-menu-item-image_1597222241749.jpg" alt="Pancong Lumer Matcha Crunchy">
+                    <h3>Pancong Lumer Matcha Crunchy</h3>
+                    <p>Harga: Rp 13.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pancong Lumer Matcha Crunchy', 13000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">  
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4dzJG6M7JpKla7ISwOKZBC-766BPYyebqTQ&s" alt="Pancong Lumer Mix">
+                    <h3>Pancong Lumer Mix</h3>
+                    <p>Harga: Rp 13.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pancong Lumer Mix', 13000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://cdn.yummy.co.id/content-images/images/20211124/LhUf0m7Cncj0SbNQDp4n8cGDZjRl6cID-31363337373632363432d41d8cd98f00b204e9800998ecf8427e.jpg?x-oss-process=image/resize,w_388,h_388,m_fixed,x-oss-process=image/format,webp" alt="Kue Cubit">
+                    <h3>Kue Cubit</h3>
+                    <p>Harga: Rp 11.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Kue Cubit', 11000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/5be93217-2904-4a55-a516-d73380d0da02_Go-Biz_20210727_053406.jpeg" alt="Aneka Jus">
+                    <h3>Aneka Jus</h3>
+                    <p>Harga: Rp 13.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Pentol', 13000)">Tambah ke Keranjang</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://fibercreme.com/wp-content/uploads/2021/05/Es-Teler-Alpukat.jpg" alt="Es Teler">
+                    <h3>Es Teler</h3>
+                    <p>Harga: Rp 15.000</p>
+                    <button class="add-to-cart" onclick="addToCart('Es Teler', 15000)">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <div class="container">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-list">
+                <!-- Items in cart will appear here -->
+            </ul>
+            <p>Total: Rp <span id="total-price">0</span></p>
+            <!-- Tombol Pesan Sekarang -->
+            <button id="order-now-btn" style="display: none;" onclick="orderNow()">Pesan Sekarang</button>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Jika Anda memiliki pertanyaan atau ingin melakukan pemesanan khusus, Anda bisa menghubungi kami melalui:</p>
+            <p><strong>Email:</strong> info@tokomakananrumahan.com</p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/6285719364231" target="_blank">Klik untuk chat</a></p>
+            <p>Alamat: Jalan Rhm Noeradji Gange Mede 6 No. 5, Kota Tangerang, Kecamatan Karawaci Kelurahan Gerendeng Provinsi Banten, Indonesia</p>
+            <p>Jam Operasional: Senin - Jumat (10:00 - 18:00), Sabtu (10:00 - 14:00)</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Toko Makanan Jaman Now. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Array untuk menyimpan item yang ada di keranjang belanja
+        let cart = [];
+        let totalPrice = 0;
+
+        // Fungsi untuk menambah item ke keranjang
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            totalPrice += productPrice;
+            updateCart();
+        }
+
+        // Fungsi untuk menghapus item dari keranjang
+        function removeFromCart(index) {
+            const itemToRemove = cart[index];
+            totalPrice -= itemToRemove.price;
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        // Fungsi untuk memperbarui tampilan keranjang
+        function updateCart() {
+            const cartList = document.getElementById('cart-list');
+            const totalPriceElement = document.getElementById('total-price');
+            const orderNowBtn = document.getElementById('order-now-btn');
+
+            cartList.innerHTML = '';
+            cart.forEach((item, index) => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.name} - Rp ${item.price}`;
+
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Hapus';
+                removeButton.onclick = () => removeFromCart(index);
+
+                listItem.appendChild(removeButton);
+                cartList.appendChild(listItem);
+            });
+
+            totalPriceElement.textContent = totalPrice;
+
+            if (cart.length > 0) {
+                orderNowBtn.style.display = 'inline-block';
+            } else {
+                orderNowBtn.style.display = 'none';
+            }
+        }
+
+        // Fungsi untuk memesan barang melalui WhatsApp
+        function orderNow() {
+            let orderMessage = 'Pesan Makanan: \n';
+            cart.forEach(item => {
+                orderMessage += `${item.name} - Rp ${item.price}\n`;
+            });
+            orderMessage += `Total: Rp ${totalPrice}`;
+
+            const adminWhatsAppNumber = '6285719364231';
+            const whatsappURL = `https://wa.me/${adminWhatsAppNumber}?text=${encodeURIComponent(orderMessage)}`;
+
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</body>
+</html>
